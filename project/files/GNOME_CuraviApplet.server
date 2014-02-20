@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<oaf_info>
+  <oaf_server iid="OAFIID:GNOME_CuraviApplet_Factory" type="exe" location="/usr/local/Curavi/applet.py">
+    <oaf_attribute name="repo_ids" type="stringv">
+      <item value="IDL:Bonobo/GenericFactory:1.0"/>
+      <item value="IDL:Bonobo/Unknown:1.0"/>
+    </oaf_attribute>
+    <oaf_attribute name="name" type="string" value="Curavi Applet Factory"/>
+    <oaf_attribute name="name-en_GB" type="string" value="Curavi Applet Factory"/>
+    <oaf_attribute name="name-es" type="string" value="Fábrica de la miniaplicación Curavi"/>
+    <oaf_attribute name="description" type="string" value="Factory for Curavi Applet"/>
+    <oaf_attribute name="description-en_GB" type="string" value="Factory for Curavi Applet"/>
+    <oaf_attribute name="description-es" type="string" value="Fábrica para la miniaplicación Curavi"/>
+  </oaf_server>
+  <oaf_server iid="OAFIID:GNOME_CuraviApplet" type="factory" location="OAFIID:GNOME_CuraviApplet_Factory">
+    <oaf_attribute name="repo_ids" type="stringv">
+      <item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+      <item value="IDL:Bonobo/Control:1.0"/>
+      <item value="IDL:Bonobo/Unknown:1.0"/>
+    </oaf_attribute>
+    <oaf_attribute name="panel:category" type="string" value="System &amp; Hardware"/>
+    <oaf_attribute name="panel:icon" type="string" value="CuraviApplet"/>
+    <oaf_attribute name="name" type="string" value="Curavi Applet"/>
+    <oaf_attribute name="name-en_GB" type="string" value="Curavi Applet"/>
+    <oaf_attribute name="name-es" type="string" value="Miniaplicación Curavi"/>
+    <oaf_attribute name="description" type="string" value="Check the hard disk state"/>
+    <oaf_attribute name="description-en_GB" type="string" value="Check the hard disk state"/>
+    <oaf_attribute name="description-es" type="string" value="Monitorea el estado del disco duro"/>
+	<oaf_attribute name="bonobo:environment" type="stringv">
+		<item value="DBUS_SESSION_BUS_ADDRESS"/>
+	</oaf_attribute>
+  </oaf_server>
+</oaf_info>

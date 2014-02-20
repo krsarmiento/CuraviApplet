@@ -1,0 +1,49 @@
+  ____                      _    ___        _ 
+ / ___|   _ _ __ __ ___   _(_)  / _ \      / |
+| |  | | | | '__/ _` \ \ / / | | | | |     | |
+| |__| |_| | | | (_| |\ V /| | | |_| |  _  | |
+ \____\__,_|_|  \__,_| \_/ |_|  \___/  (_) |_|
+
+
+
+*********Curavi Applet v0.1*********
+Applet para el monitoreo del disco duro.
+Curavi Applet  Copyright (C) 2011  Kevin Rafael Sarmiento Mendoza
+GNU GPL v3.0
+
+***********DEPENDENCIAS*************
+Para que el applet funcione de manera correcta, se deben tener instalados
+los paquetes smartmontools y hdparm:
+
+http://sourceforge.net/apps/trac/smartmontools/wiki
+http://es.wikipedia.org/wiki/Hdparm
+
+Estas aplicaciones generalmente se encuentran en los repositorios.
+
+Para instalarlas basta con ejecutar (Por ejemplo):
+
+sudo pacman -S smartmontools hdparm  #Arch
+sudo yaourt -S smartmontools hdparm  #Arch
+
+sudo apt-get install smartmontools hdparm  #Ubuntu
+sudo aptitude install smartmontools hdparm  #Ubuntu
+
+También se debe tener GNOME 2.x y python 2.x
+
+************INSTALACIÓN**************
+Para instalar el applet siga los siguientes pasos: 
+
+1)Ejecute el script INSTALL.sh en el mismo nivel del directorio donde se encuentra este archivo
+2)Ingrese su contraseña para efectos administrativos
+3)Reinicie el servidor gráfico (e.g. Cierre e inicie sesión)
+4)Haga click derecho sobre el panel sobre el cual se desea el applet
+5)Seleccione "Añadir al panel" -> "Miniaplicación Curavi"
+
+Nota: La desinstalación se hace de la misma manera, pero ejecutando el script UNINSTALL.sh
+
+
+**************Créditos**************
+Kevin Rafael Sarmiento mendoza
+mkdir07[at]gmail[dot]com
+Estudiante de Ingeniería de Sistemas
+Universidad de Cartagena
